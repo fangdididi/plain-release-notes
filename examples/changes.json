@@ -1,0 +1,108 @@
+{
+ "from": "v1.4.0 (sha in a real run)",
+ "to": "v1.5.0 (sha in a real run)",
+ "changes": [
+  {
+   "id": "#41",
+   "sha": "demo41",
+   "subject": "feat(search): search inside note attachments (#41)",
+   "body": "PDF and image text is now indexed. Search returns in about 0.4 s on 10000 notes, was 2.5 s.",
+   "files": [
+    "src/search.py"
+   ],
+   "hints": [],
+   "sort": "see",
+   "guess": "",
+   "heading": "When you search",
+   "note": "Search now looks inside attached PDFs and images, and answers in about 0.4 s on 10000 notes instead of 2.5 s."
+  },
+  {
+   "id": "#42",
+   "sha": "demo42",
+   "subject": "test: cover attachment search (#42)",
+   "body": "",
+   "files": [
+    "src/test_search.py"
+   ],
+   "hints": [],
+   "sort": "quiet",
+   "guess": "quiet",
+   "heading": "",
+   "note": ""
+  },
+  {
+   "id": "#43",
+   "sha": "demo43",
+   "subject": "fix(export): keep line breaks when exporting to Markdown (#43)",
+   "body": "",
+   "files": [
+    "src/export.py"
+   ],
+   "hints": [],
+   "sort": "see",
+   "guess": "",
+   "heading": "When you share or export",
+   "note": "Markdown exports keep your line breaks."
+  },
+  {
+   "id": "#44",
+   "sha": "demo44",
+   "subject": "feat!: pinned notes; sync server must be 2.0 or newer (#44)",
+   "body": "BREAKING: self-hosted sync servers older than 2.0 reject the new pinned field. Upgrade the server first.",
+   "files": [
+    "migrations/007_pinned.sql",
+    "src/pin.py"
+   ],
+   "hints": [
+    "breaking",
+    "migration"
+   ],
+   "sort": "act",
+   "guess": "act",
+   "heading": "When you organise notes",
+   "note": "If you run your own sync server, upgrade it to 2.0 or newer before updating the app. Then pin notes to keep them at the top."
+  },
+  {
+   "id": "#45",
+   "sha": "demo45",
+   "subject": "refactor: split NoteStore into reader and writer (#45)",
+   "body": "",
+   "files": [
+    "src/util.py"
+   ],
+   "hints": [],
+   "sort": "quiet",
+   "guess": "quiet",
+   "heading": "",
+   "note": ""
+  },
+  {
+   "id": "#46",
+   "sha": "demo46",
+   "subject": "ci: cache wheels (#46)",
+   "body": "",
+   "files": [
+    "ci.yml"
+   ],
+   "hints": [],
+   "sort": "quiet",
+   "guess": "quiet",
+   "heading": "",
+   "note": ""
+  },
+  {
+   "id": "#47",
+   "sha": "demo47",
+   "subject": "feat(settings): follow the system dark mode (#47)",
+   "body": "",
+   "files": [
+    "src/theme.py"
+   ],
+   "hints": [],
+   "sort": "see",
+   "guess": "",
+   "heading": "Settings",
+   "note": "The app can follow your system dark mode."
+  }
+ ]
+}

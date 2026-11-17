@@ -1,0 +1,12 @@
+ERROR L6: '#45' is sorted quiet; readers never see it, so leave it out
+ERROR L6: number 10 does not appear in the traced change(s); check it or remove it
+ERROR L7: '#46' is sorted quiet; readers never see it, so leave it out
+ERROR L8: no trace tag <!-- src: ... --> (every line must point at a change)
+ERROR missing: '#44' needs reader action but is not in the notes (feat!: pinned notes; sync server must be 2.0 or newer (#44))
+WARN  L5: opens with 'fixed a bug'; say what now works for the reader
+WARN  L5: code-style name 'export_markdown'; use the words people see on screen
+WARN  L6: jargon 'refactor' for an end-user audience
+WARN  L6: code-style name 'NoteStore'; use the words people see on screen
+WARN  L7: jargon 'ci' for an end-user audience
+WARN  not shown: '#47' is sorted see but has no line (feat(settings): follow the system dark mode (#47))
+FAIL: 5 errors, 6 warnings. 7 changes: 1 act, 3 see, 3 quiet; 4 traced in the notes
